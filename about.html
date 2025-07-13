@@ -9,7 +9,7 @@
 	
 	<title>Transfers - About us</title>
 	
-	<link rel="stylesheet" href="css/theme-pink.css" />
+	<link rel="stylesheet" href="css/theme-yellow.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/icons.css" />
@@ -38,141 +38,85 @@
 	<!-- //Preloader -->
 	
     <!-- Header -->
-	<header class="header" role="banner">
-		<div class="wrap">
-			<!-- Logo -->
-			<div class="logo">
-				<a href="index.html" title="Transfers"><img src="images/transfers.jpg" alt="Transfers" /></a>
-			</div>
-			<!-- //Logo -->
-			
-			<!-- Main Nav -->
-			<nav role="navigation" class="main-nav">
-				<ul>
-					<li><a href="index.html" title="">Home</a></li>
-					<li><a href="destinations.html" title="Destinations">Destinations</a>
-						<ul>
-							<li><a href="destination-single.html" title="Single destination">Single destination</a></li>
-							<li><a href="destination-micro.html" title="Micro destination">Micro destination</a></li>
-						</ul>
-					</li>
-					<li><a href="tailor-made.html" title="Tailor made">Tailor made</a></li>
-					<li><a href="blog.html" title="Blog">Blog</a>
-						<ul>
-							<li><a href="blog.html" title="Post">Blog list</a></li>
-							<li><a href="blog2.html" title="Post">Blog grid</a></li>
-							<li><a href="blog-single.html" title="Post">Post</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html" title="Contact">Contact</a></li>
-					<li class="active"><a href="#" title="Pages">Pages</a>
-						<div>
-							<div class="one-fourth">
-								<h2>Common</h2>
-								<ul>
-									<li><a href="left-sidebar-page.html" title="Left sidebar page">Left sidebar page</a></li>
-									<li><a href="right-sidebar-page.html" title="Right sidebar page">Right sidebar page</a></li>
-									<li><a href="both-sidebar-page.html" title="Both sidebars page">Both sidebars page</a></li>
-									<li><a href="full-width-page.html" title="Full width page">Full width page</a></li>
-								</ul>
-							</div>
-							<div class="one-fourth">
-								<h2>Booking</h2>
-								<ul>
-									<li><a href="search-results.html" title="Search results page">Search results page</a></li>
-									<li><a href="booking-step1.html" title="Booking step 1">Booking step 1</a></li>
-									<li><a href="booking-step2.html" title="Booking step 2">Booking step 2</a></li>
-									<li><a href="booking-step3.html" title="Booking step 3">Booking step 3</a></li>
-								</ul>
-							</div>
-							<div class="one-fourth">
-								<h2>Corporate</h2>
-								<ul>
-									<li><a href="about.html" title="About u">About us</a></li>
-									<li><a href="services.html" title="Services">Services</a></li>
-									<li><a href="faq.html" title="Faq">Faq</a></li>
-									<li><a href="contact.html" title="Contact">Contact</a></li>
-								</ul>
-							</div>
-							<div class="one-fourth">
-								<h2>Special</h2>
-								<ul>
-									<li><a href="login.html" title="Login">Login</a></li>
-									<li><a href="register.html" title="Register">Register</a></li>
-									<li><a href="account.html" title="My account">My account</a></li>
-									<li><a href="error.html" title="404 error">404 error</a></li>
-								</ul>
-							</div>
-						</div>
-					</li>
-					<li><a href="http://themeforest.net/item/transfers-transport-and-car-hire-html-template/9366018?ref=themeenergy" title="Purchase">Purchase</a></li>
-				</ul>
-			</nav>
-			<!-- //Main Nav -->
-		</div>
-	</header>
+	<div id="header"></div>
+
+		<script>
+		fetch('components/header.html')
+			.then(res => res.text())
+			.then(data => {
+			document.getElementById('header').innerHTML = data;
+			})
+			.catch(err => {
+			console.error('Failed to load header:', err);
+			});
+		</script>
 	<!-- //Header -->
 	
 	<!-- Main -->
 	<main class="main" role="main">
-		<!-- Page info -->
-		<header class="site-title color">
-			<div class="wrap">
-				<div class="container">
-					<h1>About us</h1>
-					<nav role="navigation" class="breadcrumbs">
-						<ul>
-							<li><a href="index.html" title="Home">Home</a></li>
-							<li>About us</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<!-- //Page info -->
-		
+	<!-- Page info -->
+	<header class="site-title color">
 		<div class="wrap">
-			<div class="row">
-				<!--- Content -->
-				<div class="content three-fourth textongrey">
-					<h2>Our story</h2>
-					<p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> 
-					<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p> 
-					<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p> 
-					<h3>Our mission</h3>
-					<p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p> 
-					<h3>Our vision</h3>
-					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline </p>
-				</div>
-				<!--- //Content -->
-				
-				<!--- Sidebar -->
-				<aside class="one-fourth sidebar right offset">
-					<!-- Widget -->
-					<div class="widget">
-						<h4>Why book with us?</h4>
-						<div class="textwidget">
-							<h5>Reliable and Safe</h5>
-							<p>Lorem ipsum dolor sit amet,  do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
-							<h5>No hidden fees</h5>
-							<p>Lorem ipsum dolor sit amet,  do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
-							<h5>We’re Always Here</h5>
-							<p>Lorem ipsum dolor sit amet,  do eiusmod tempor incididunt labore et dolore magna aliqua.</p>
-						</div>
-					</div>
-					<!-- //Widget -->
-					
-					<!-- Widget -->
-					<div class="widget">
-						<h4>Advertisment</h4>
-						<a href="#"><img src="images/uploads/advertisment.jpg" alt="" /></a>
-					</div>
-					<!-- //Widget -->
-				</aside>
-				<!--- //Sidebar -->
+			<div class="container">
+				<h1>About Us</h1>
+				<nav role="navigation" class="breadcrumbs">
+					<ul>
+						<li><a href="index.html" title="Home">Home</a></li>
+						<li>About Us</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-	</main>
+	</header>
+	<!-- //Page info -->
+
+	<div class="wrap">
+		<div class="row">
+			<!--- Content -->
+			<div class="content three-fourth textongrey">
+				<h2>Our Story</h2>
+				<p class="lead">Skulbus was created out of a simple but powerful idea — to make school transport safer, more efficient, and easier to manage for schools and parents across Kenya.</p>
+				<p>Frustrated by the lack of accountability in traditional school transport systems, we built a digital platform that connects schools, drivers, and parents in real time. Today, Skulbus helps ensure that thousands of students get to and from school safely with tools for tracking, reporting, and communication.</p>
+				<p>From rural communities to urban centers, Skulbus is bridging the gap between technology and education logistics — and we’re just getting started.</p>
+
+				<h3>Our Mission</h3>
+				<p>To simplify and secure school transportation across Africa by providing schools and families with a smart, transparent, and reliable transport management platform.</p>
+
+				<h3>Our Vision</h3>
+				<p>To become the leading school mobility platform in Africa, setting the standard for safety, innovation, and convenience in education transport systems.</p>
+			</div>
+			<!--- //Content -->
+
+			<!--- Sidebar -->
+			<aside class="one-fourth sidebar right offset">
+				<!-- Widget -->
+				<div class="widget">
+					<h4>Why Choose Skulbus?</h4>
+					<div class="textwidget">
+						<h5>Reliable & Tracked</h5>
+						<p>Real-time GPS lets parents and schools track every ride. No more guessing or calling drivers endlessly.</p>
+
+						<h5>No Hidden Costs</h5>
+						<p>Our pricing is clear and fixed — no last-minute surprises. Schools and parents can plan with confidence.</p>
+
+						<h524/7 Support</h5>
+						<p>Our support team is always available to help with bookings, route changes, or any unexpected issues.</p>
+					</div>
+				</div>
+				<!-- //Widget -->
+
+				<!-- Widget -->
+				<div class="widget">
+					<h4>Advertisement</h4>
+					<a href="#"><img src="images/uploads/skulbus-ad.jpg" alt="Advertisment" /></a>
+				</div>
+				<!-- //Widget -->
+			</aside>
+			<!--- //Sidebar -->
+		</div>
+	</div>
+    </main>
+
 	<!-- //Main -->
 	
 	<!-- Services iconic -->
@@ -181,141 +125,91 @@
 			<div class="row">
 				<!-- Item -->
 				<div class="one-third wow fadeIn">
-					<span class="circle"><span class="icon  icon-themeenergy_savings"></span></span>
+					<span class="circle"><span class="icon icon-themeenergy_savings"></span></span>
 					<h3>Fixed rates</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Enjoy transparent pricing with no hidden costs. Our fixed rates make planning school transport budgets easier and more predictable.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn" data-wow-delay=".2s">
 					<span class="circle"><span class="icon icon-themeenergy_lockpad"></span></span>
 					<h3>Reliable transfers</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Count on us for timely pickups and drop-offs. With real-time tracking and verified drivers, your child's commute is always in good hands.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn" data-wow-delay=".4s">
 					<span class="circle"><span class="icon icon-themeenergy_open-wallet"></span></span>
 					<h3>No booking fees</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Book rides without any extra charges. We ensure a smooth and fee-free booking experience for schools and parents alike.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn">
 					<span class="circle"><span class="icon icon-themeenergy_heart"></span></span>
 					<h3>Free cancellation</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Change of plans? No problem. Enjoy the flexibility of cancelling bookings without any penalties or stress.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn" data-wow-delay=".2s">
 					<span class="circle"><span class="icon icon-themeenergy_magic-trick"></span></span>
 					<h3>Booking flexibility</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Choose one-way, round-trip, or custom routes. Our platform adapts to your transport needs with complete flexibility.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn" data-wow-delay=".4s">
 					<span class="circle"><span class="icon icon-themeenergy_call"></span></span>
 					<h3>24h customer service</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Need help? Our customer support team is available 24/7 to assist with any issues or inquiries, anytime you need us.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn">
 					<span class="circle"><span class="icon icon-themeenergy_cup"></span></span>
 					<h3>Award winning service</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Trusted by schools and recognized for safety and innovation in transport technology across the education sector.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn" data-wow-delay=".2s">
 					<span class="circle"><span class="icon icon-themeenergy_attach"></span></span>
 					<h3>Benefits for partners</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>Schools and transport providers benefit from digital tools, reports, and better operational control with our platform.</p>
 				</div>
 				<!-- //Item -->
-				
+
 				<!-- Item -->
 				<div class="one-third wow fadeIn" data-wow-delay=".4s">
 					<span class="circle"><span class="icon icon-themeenergy_stars"></span></span>
 					<h3>Quality vehicles</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  tinc dolore magna.</p>
+					<p>All vehicles meet safety standards and are operated by trained professionals to ensure secure and comfortable rides.</p>
 				</div>
 				<!-- //Item -->
 			</div>
 		</div>
 	</div>
 	<!-- //Services iconic -->
-	
-	<!-- Call to action -->
-	<div class="color cta">
-		<div class="wrap">
-			<p class="wow fadeInLeft">Like what you see? Are you ready to stand out? You know what to do.</p>
-			<a href="#" class="btn huge black right wow fadeInRight">Purchase theme</a>
-		</div>
-	</div>
-	<!-- //Call to action -->
-	
 	<!-- Footer -->
-	<footer class="footer black" role="contentinfo">
-		<div class="wrap">
-			<div class="row">
-				<!-- Column -->
-				<article class="one-half">
-					<h6>About us</h6>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-				</article>
-				<!-- //Column -->
-				
-				<!-- Column -->
-				<article class="one-fourth">
-					<h6>Need help?</h6>
-					<p>Contact us via phone or email:</p>
-					<p class="contact-data"><span class="icon icon-themeenergy_call"></span> +1 555 555 555</p>
-					<p class="contact-data"><span class="icon icon-themeenergy_mail-2"></span> <a href="mailto:help@transfers.com">help@transfers.com</a></p>
-				</article>
-				<!-- //Column -->
-				
-				<!-- Column -->
-				<article class="one-fourth">
-					<h6>Follow us</h6>
-					<ul class="social">
-						<li><a href="#" title="facebook"><i class="fa fa-fw fa-facebook"></i></a></li>
-						<li><a href="#" title="twitter"><i class="fa fa-fw fa-twitter"></i></a></li>
-						<li><a href="#" title="gplus"><i class="fa fa-fw fa-google-plus"></i></a></li>
-						<li><a href="#" title="linkedin"><i class="fa fa-fw fa-linkedin"></i></a></li>
-						<li><a href="#" title="pinterest"><i class="fa fa-fw fa-pinterest-p"></i></a></li>
-						<li><a href="#" title="vimeo"><i class="fa fa-fw fa-vimeo"></i></a></li>
-					</ul>
-				</article>
-				<!-- //Column -->
-			</div>
-			
-			<div class="copy">
-				<p>Copyright 2016, Themeenergy. All rights reserved. </p>
-				
-				<nav role="navigation" class="foot-nav">
-					<ul>
-						<li><a href="#" title="Home">Home</a></li>
-						<li><a href="#" title="Blog">Blog</a></li>
-						<li><a href="#" title="About us">About us</a></li>
-						<li><a href="#" title="Contact us">Contact us</a></li>
-						<li><a href="#" title="Terms of use">Terms of use</a></li>
-						<li><a href="#" title="Help">Help</a></li>
-						<li><a href="#" title="For partners">For partners</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</footer>
+	<div id="footer"></div>
+
+	<script>
+	fetch('components/footer.html')
+		.then(response => response.text())
+		.then(data => {
+		document.getElementById('footer').innerHTML = data;
+		})
+		.catch(error => console.error('Error loading footer:', error));
+	</script>
+
 	<!-- //Footer -->
 	
     <!-- jQuery -->
